@@ -20,6 +20,12 @@ Il ne contient **aucun code source** — seulement les installeurs publiés et l
 | stable | `latest.yml` | un tag `vX.Y.Z` |
 | test | `beta.yml` | un tag `vX.Y.Z-beta.N` |
 
+## Licences des composants tiers
+
+L'installeur embarque **SumatraPDF 3.4.6, sous GPL-3.0**, invoqué comme programme séparé pour
+l'impression PDF. L'avis, les liens amont et **l'offre écrite de fourniture du source** sont dans
+[`LICENCES-TIERS.md`](LICENCES-TIERS.md).
+
 ## Publier une version
 
 Depuis le dépôt de code, jamais ici :
