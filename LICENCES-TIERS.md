@@ -51,8 +51,14 @@ Quatre paquets portent une licence isolée, tout aussi permissive : `argparse` (
 (AFL-2.1 ou BSD-3-Clause, au choix de qui redistribue). La liste exacte, paquet par paquet, est en
 annexe.
 
-**Aucune bibliothèque LGPL n'est distribuée.** Les deux modules natifs qui en auraient apporté
-(`usb`, qui embarque libusb, et `serialport`) ne font pas partie du produit.
+**Des bibliothèques sous LGPL sont distribuées, avec Electron.** Electron livre FFmpeg sous la
+forme d'une bibliothèque dynamique distincte, `ffmpeg.dll`, sous LGPL-2.1 ou ultérieure ; Chromium,
+dont Electron est fait, compte d'autres composants sous LGPL, dont des parties du moteur de rendu
+héritées de WebKit, compilées dans l'exécutable. Leurs avis de licence sont dans
+`LICENSES.chromium.html`, installé à côté de l'exécutable de l'application ; leur code source est
+publié par leurs projets : <https://source.chromium.org/chromium>,
+<https://github.com/electron/electron> et <https://ffmpeg.org/download.html>. Le module `usb`, qui
+aurait apporté libusb (LGPL-2.1), ne fait pas partie du produit.
 
 ---
 
@@ -69,7 +75,10 @@ embarque), et le relevé que la construction écrit pour l'écran d'administrati
 se régénère dans le même geste.
 
 *Dernière vérification : 2026-09-29, sur `pdf-to-printer@5.6.0` ; annexe générée depuis
-`kroown-pos` (`package-lock.json` de `master`, commit `6765411`).*
+`kroown-pos` (`package-lock.json` de `master`, commit `6765411`). Composants LGPL d'Electron
+vérifiés le 2026-10-01 sur `electron@35.7.5` (`ffmpeg.dll` et `LICENSES.chromium.html` de sa
+distribution Windows, que l'installeur reprend) : ils changent avec la version d'Electron, et
+`LICENSES.chromium.html` livré avec chaque version fait foi.*
 
 ---
 
