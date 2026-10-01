@@ -44,7 +44,8 @@ concernée. Cette offre reste valable tant que la version correspondante est dis
 Le reste de l'application repose sur des composants sous licences permissives — **MIT, ISC, BSD,
 Apache-2.0, et la police Inter sous SIL OFL-1.1** — qui n'imposent que la conservation de leur avis
 de copyright, laquelle est assurée par leur présence inchangée dans l'installeur : Electron et
-Chromium, Node.js, React, MUI, Express, better-sqlite3, `escpos`, `iconv-lite`, `electron-updater`.
+Chromium (hors leurs composants sous LGPL, ci-dessous), Node.js, React, MUI, Express,
+better-sqlite3, `escpos`, `iconv-lite`, `electron-updater`.
 
 Quatre paquets portent une licence isolée, tout aussi permissive : `argparse` (Python-2.0), `sax`
 (BlueOak-1.0.0), `tslib` (0BSD) et `tweetnacl` (Unlicense) ; `json-schema` est sous double licence
